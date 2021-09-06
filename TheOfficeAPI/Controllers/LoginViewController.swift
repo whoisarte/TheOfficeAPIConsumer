@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)
           } else {
-            
+            self.performSegue(withIdentifier: MainStorySegues.homeSegue, sender: self)
           }
         }
     }
@@ -34,7 +34,11 @@ class LoginViewController: UIViewController {
     @IBAction func B_LoginRegistrarse_Click(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let registerViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-                self.present(registerViewController, animated: true, completion: nil)
+        
+        registerViewController.hola = "arttemio"
+        registerViewController.modalPresentationStyle = .overFullScreen
+        //self.present(registerViewController, animated: true, completion: nil)
+        
     }
     //Funciones de diseño
     func conversionComponentesRedondeados(){

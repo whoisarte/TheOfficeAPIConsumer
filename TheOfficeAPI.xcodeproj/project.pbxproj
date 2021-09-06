@@ -19,6 +19,8 @@
 		0CDC314026E2CF150043E9B6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC313F26E2CF150043E9B6 /* Home.storyboard */; };
 		0CDFD35026E2AEC800B7B83F /* APIRequestGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD34F26E2AEC800B7B83F /* APIRequestGet.swift */; };
 		0CDFD35626E2AF2C00B7B83F /* GetQuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD35526E2AF2C00B7B83F /* GetQuotesService.swift */; };
+		0CF7C3ED26E6827000ED20B1 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3EC26E6827000ED20B1 /* LoginService.swift */; };
+		0CF7C3F026E6836C00ED20B1 /* MainStorySegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */; };
 		BF403BFB09F13910532FE819 /* Pods_TheOfficeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381DBEE08599398A4F28ED2D /* Pods_TheOfficeAPI.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		0CDC313F26E2CF150043E9B6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		0CDFD34F26E2AEC800B7B83F /* APIRequestGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestGet.swift; sourceTree = "<group>"; };
 		0CDFD35526E2AF2C00B7B83F /* GetQuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuotesService.swift; sourceTree = "<group>"; };
+		0CF7C3EC26E6827000ED20B1 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorySegues.swift; sourceTree = "<group>"; };
 		381DBEE08599398A4F28ED2D /* Pods_TheOfficeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheOfficeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A10959938AE0741D743A4F3 /* Pods-TheOfficeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOfficeAPI.debug.xcconfig"; path = "Target Support Files/Pods-TheOfficeAPI/Pods-TheOfficeAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		645F4595880017A03E1BE9BE /* Pods-TheOfficeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOfficeAPI.release.xcconfig"; path = "Target Support Files/Pods-TheOfficeAPI/Pods-TheOfficeAPI.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		0C723B1826E1721C00959EE3 /* TheOfficeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0CF7C3EE26E6834600ED20B1 /* Constants */,
 				0CDFD35226E2AED900B7B83F /* Services */,
 				0CDFD34E26E2AE8F00B7B83F /* Network */,
 				0C723B4526E1738400959EE3 /* Models */,
@@ -130,8 +135,17 @@
 			isa = PBXGroup;
 			children = (
 				0CDFD35526E2AF2C00B7B83F /* GetQuotesService.swift */,
+				0CF7C3EC26E6827000ED20B1 /* LoginService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0CF7C3EE26E6834600ED20B1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		1D6F70A35AD0B00E29A82F7F /* Frameworks */ = {
@@ -273,7 +287,9 @@
 				0CDFD35626E2AF2C00B7B83F /* GetQuotesService.swift in Sources */,
 				0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */,
 				0C723B4F26E1751300959EE3 /* RegisterViewController.swift in Sources */,
+				0CF7C3F026E6836C00ED20B1 /* MainStorySegues.swift in Sources */,
 				0C723B5626E188AF00959EE3 /* HomeViewController.swift in Sources */,
+				0CF7C3ED26E6827000ED20B1 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

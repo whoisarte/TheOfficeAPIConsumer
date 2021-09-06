@@ -3,6 +3,8 @@ import Firebase
 
 class RegisterViewController: UIViewController {
 
+    
+    var hola = ""
     //Atributos de la vista RegisterView
     @IBOutlet weak var TF_RegisterUsuario: UITextField!
     @IBOutlet weak var TF_RegisterContraseña: UITextField!
@@ -11,6 +13,8 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office HH.RR"
+        
+        print(hola)
         conversionComponentesRedondeados()
     }
     

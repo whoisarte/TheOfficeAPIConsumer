@@ -11,8 +11,8 @@
         <scene sceneID="esh-DB-azX">
             <objects>
                 <navigationController id="Jgd-GM-zs7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LqJ-rw-zxB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="LqJ-rw-zxB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.75294117647058822" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KDP-h9-c8H">
-                                <rect key="frame" x="16" y="44" width="382" height="240"/>
+                                <rect key="frame" x="16" y="96" width="382" height="240"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.-mike-office" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-MC-Zba">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="240"/>
@@ -41,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bLH-Y3-Kqm">
-                                <rect key="frame" x="16" y="299" width="382" height="72"/>
+                                <rect key="frame" x="16" y="351" width="382" height="72"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-L3-Hab">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -56,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-FX-OdA">
-                                <rect key="frame" x="16" y="401" width="382" height="30"/>
+                                <rect key="frame" x="16" y="453" width="382" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-fy-Pjn">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
@@ -66,7 +66,7 @@
                                         </state>
                                         <connections>
                                             <action selector="B_LoginEntrar_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="msj-Dz-8Vr"/>
-                                            <segue destination="vKq-hx-WWg" kind="show" id="bzU-W0-qm4"/>
+                                            <segue destination="vKq-hx-WWg" kind="show" identifier="toHomeSegue" id="bzU-W0-qm4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pr-Py-42g">
@@ -77,6 +77,7 @@
                                         </state>
                                         <connections>
                                             <action selector="B_LoginRegistrarse_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="XU7-84-pY1"/>
+                                            <segue destination="IhF-JI-bMG" kind="show" id="IAw-Gw-dL4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -116,12 +117,13 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOC-XJ-bb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="-1335"/>
+            <point key="canvasLocation" x="159" y="-1335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dpF-vo-VDG">
             <objects>
-                <navigationController id="T6h-Z6-R7B" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="T6h-Z6-R7B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uKq-oo-6l8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yCL-DI-dP4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -143,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-bp-dXZ">
-                                <rect key="frame" x="16" y="124" width="382" height="76"/>
+                                <rect key="frame" x="16" y="176" width="382" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-dD-dAt">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -158,7 +160,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-PY-9kK">
-                                <rect key="frame" x="16" y="240" width="382" height="30"/>
+                                <rect key="frame" x="16" y="292" width="382" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Registrarse">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -168,7 +170,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.-office-building" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-dR-uAG">
-                                <rect key="frame" x="16" y="350" width="382" height="234"/>
+                                <rect key="frame" x="16" y="402" width="382" height="234"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6wo-MG-s8U"/>
@@ -197,6 +199,9 @@
             <point key="canvasLocation" x="-504" y="-577"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IAw-Gw-dL4"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="1.-mike-office" width="561" height="240"/>
         <image name="3.-office-building" width="999" height="234"/>
