@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C0B15D626E1DC99008530A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C0B15D526E1DC98008530A0 /* GoogleService-Info.plist */; };
 		0C723B1A26E1721C00959EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B1926E1721C00959EE3 /* AppDelegate.swift */; };
 		0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B1B26E1721C00959EE3 /* SceneDelegate.swift */; };
 		0C723B2326E1723300959EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C723B2226E1723300959EE3 /* Assets.xcassets */; };
@@ -15,8 +14,8 @@
 		0C723B4926E1745300959EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C723B4826E1745300959EE3 /* Main.storyboard */; };
 		0C723B4C26E1750200959EE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B4B26E1750200959EE3 /* LoginViewController.swift */; };
 		0C723B4F26E1751300959EE3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B4E26E1751300959EE3 /* RegisterViewController.swift */; };
-		0C723B5126E1752D00959EE3 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B5026E1752D00959EE3 /* FirebaseManager.swift */; };
 		0C723B5626E188AF00959EE3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B5526E188AF00959EE3 /* HomeViewController.swift */; };
+		0CA46A7F26E3C547009D20BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA46A7E26E3C547009D20BE /* GoogleService-Info.plist */; };
 		0CDC314026E2CF150043E9B6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC313F26E2CF150043E9B6 /* Home.storyboard */; };
 		0CDFD35026E2AEC800B7B83F /* APIRequestGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD34F26E2AEC800B7B83F /* APIRequestGet.swift */; };
 		0CDFD35626E2AF2C00B7B83F /* GetQuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD35526E2AF2C00B7B83F /* GetQuotesService.swift */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C0B15D526E1DC98008530A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C723B1626E1721C00959EE3 /* TheOfficeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOfficeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C723B1926E1721C00959EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C723B1B26E1721C00959EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,9 +32,9 @@
 		0C723B4826E1745300959EE3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0C723B4B26E1750200959EE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0C723B4E26E1751300959EE3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		0C723B5026E1752D00959EE3 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		0C723B5326E17EA400959EE3 /* Font_Typist.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Font_Typist.ttf; sourceTree = "<group>"; };
 		0C723B5526E188AF00959EE3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0CA46A7E26E3C547009D20BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CDC313F26E2CF150043E9B6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		0CDFD34F26E2AEC800B7B83F /* APIRequestGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestGet.swift; sourceTree = "<group>"; };
 		0CDFD35526E2AF2C00B7B83F /* GetQuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuotesService.swift; sourceTree = "<group>"; };
@@ -89,7 +87,7 @@
 				0C723B2426E1723300959EE3 /* LaunchScreen.storyboard */,
 				0C723B2726E1723300959EE3 /* Info.plist */,
 				0C723B5326E17EA400959EE3 /* Font_Typist.ttf */,
-				0C0B15D526E1DC98008530A0 /* GoogleService-Info.plist */,
+				0CA46A7E26E3C547009D20BE /* GoogleService-Info.plist */,
 			);
 			path = TheOfficeAPI;
 			sourceTree = "<group>";
@@ -116,7 +114,6 @@
 		0C723B4526E1738400959EE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0C723B5026E1752D00959EE3 /* FirebaseManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,7 +212,7 @@
 			files = (
 				0C723B4926E1745300959EE3 /* Main.storyboard in Resources */,
 				0CDC314026E2CF150043E9B6 /* Home.storyboard in Resources */,
-				0C0B15D626E1DC99008530A0 /* GoogleService-Info.plist in Resources */,
+				0CA46A7F26E3C547009D20BE /* GoogleService-Info.plist in Resources */,
 				0C723B2626E1723300959EE3 /* LaunchScreen.storyboard in Resources */,
 				0C723B2326E1723300959EE3 /* Assets.xcassets in Resources */,
 			);
@@ -274,7 +271,6 @@
 				0CDFD35026E2AEC800B7B83F /* APIRequestGet.swift in Sources */,
 				0C723B1A26E1721C00959EE3 /* AppDelegate.swift in Sources */,
 				0CDFD35626E2AF2C00B7B83F /* GetQuotesService.swift in Sources */,
-				0C723B5126E1752D00959EE3 /* FirebaseManager.swift in Sources */,
 				0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */,
 				0C723B4F26E1751300959EE3 /* RegisterViewController.swift in Sources */,
 				0C723B5626E188AF00959EE3 /* HomeViewController.swift in Sources */,

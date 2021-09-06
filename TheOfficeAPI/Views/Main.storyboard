@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jgd-GM-zs7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jgd-GM-zs7">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
         <!--Login View Controller-->
         <scene sceneID="65U-hM-M02">
             <objects>
-                <viewController id="KlR-jO-aIZ" customClass="LoginViewController" customModule="TheOfficeAPI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="KlR-jO-aIZ" customClass="LoginViewController" customModule="TheOfficeAPI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YzH-bX-0rD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +66,7 @@
                                         </state>
                                         <connections>
                                             <action selector="B_LoginEntrar_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="msj-Dz-8Vr"/>
+                                            <segue destination="vKq-hx-WWg" kind="show" id="bzU-W0-qm4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pr-Py-42g">
@@ -75,7 +76,7 @@
                                             <color key="titleColor" red="0.95840548349999999" green="0.96880411259999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="B_LoginRegistrarse_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="Fcc-tC-eKh"/>
+                                            <action selector="B_LoginRegistrarse_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="XU7-84-pY1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -98,7 +99,7 @@
                     <navigationItem key="navigationItem" id="nKX-8G-g5S"/>
                     <connections>
                         <outlet property="B_LoginEntrar" destination="8LJ-fy-Pjn" id="5tE-wg-HEW"/>
-                        <outlet property="B_LoginRegistrarse" destination="7pr-Py-42g" id="0Zp-Ru-UhT"/>
+                        <outlet property="B_LoginRegistrarse" destination="7pr-Py-42g" id="Y8g-6f-U9p"/>
                         <outlet property="TF_LoginContraseña" destination="fdw-G3-PEE" id="S0k-j1-RN3"/>
                         <outlet property="TF_LoginUsuario" destination="mjS-L3-Hab" id="J7e-3m-Sjb"/>
                     </connections>
@@ -106,6 +107,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRQ-8c-sMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-503" y="-1335"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="224-fN-Rsk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="vKq-hx-WWg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="77e-Pl-NGc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOC-XJ-bb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="-1335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dpF-vo-VDG">
@@ -126,7 +137,7 @@
         <!--Register View Controller-->
         <scene sceneID="PNs-GZ-qR7">
             <objects>
-                <viewController id="IhF-JI-bMG" customClass="RegisterViewController" customModule="TheOfficeAPI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="IhF-JI-bMG" customClass="RegisterViewController" customModule="TheOfficeAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uDF-lO-YNv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +153,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BL6-gg-oMM">
                                         <rect key="frame" x="0.0" y="42" width="382" height="34"/>
                                         <attributedString key="attributedText"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -156,8 +167,8 @@
                                     <action selector="B_RegisterRegistrarse_Click:" destination="IhF-JI-bMG" eventType="touchUpInside" id="XAZ-0J-y6E"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.-meeting-room-prison-mike" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-dR-uAG">
-                                <rect key="frame" x="16" y="350" width="382" height="246"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.-office-building" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-dR-uAG">
+                                <rect key="frame" x="16" y="350" width="382" height="234"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6wo-MG-s8U"/>
@@ -188,6 +199,6 @@
     </scenes>
     <resources>
         <image name="1.-mike-office" width="561" height="240"/>
-        <image name="2.-meeting-room-prison-mike" width="780" height="246"/>
+        <image name="3.-office-building" width="999" height="234"/>
     </resources>
 </document>

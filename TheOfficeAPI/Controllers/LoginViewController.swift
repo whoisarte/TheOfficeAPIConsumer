@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -13,30 +14,28 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         title = "The Office Entrance"
         conversionComponentesRedondeados()
+        
     }
     @IBAction func B_LoginEntrar_Click(_ sender: Any) {
-        let autenticador = FirebaseManager.init(withEmail: TF_LoginUsuario.text, withPassword: TF_LoginContraseña.text)
-        let isLoginable = autenticador.IngresarUsuario()
-        if(isLoginable) {
-            let _ : UIStoryboard = UIStoryboard(name: "Home", bundle:nil)
-                    let resultViewController = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                    self.navigationController?.pushViewController(resultViewController, animated: true)
-        } else {
+        Auth.auth().signIn(withEmail: TF_LoginUsuario.text!, password: TF_LoginContraseña.text!) { user, error in
+          if let error = error, user == nil {
             let alert = UIAlertController(
-                  title: "ERROR",
-                  message: "Error al iniciar sesión. Corrija sus datos o intentelo nuevamente",
-                  preferredStyle: .alert)
-
-                alert.addAction(UIAlertAction(title: "OK", style: .default))
-                self.present(alert, animated: true, completion: nil)
+              title: "Inicio de sesión fallido",
+              message: error.localizedDescription,
+              preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
+          } else {
+            
+          }
         }
     }
-    @IBAction func B_LoginRegistrarse_Click(_ sender: Any) {
-        let _ : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                let resultViewController = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-                self.navigationController?.pushViewController(resultViewController, animated: true)
-    }
     
+    @IBAction func B_LoginRegistrarse_Click(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+                self.present(registerViewController, animated: true, completion: nil)
+    }
     //Funciones de diseño
     func conversionComponentesRedondeados(){
         B_LoginEntrar.layer.cornerRadius = 5; B_LoginEntrar.clipsToBounds = true

@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
 
@@ -12,33 +13,26 @@ class RegisterViewController: UIViewController {
         title = "The Office HH.RR"
         conversionComponentesRedondeados()
     }
+    
     @IBAction func B_RegisterRegistrarse_Click(_ sender: Any) {
-        let autenticador = FirebaseManager.init(withEmail: TF_RegisterUsuario.text, withPassword: TF_RegisterContraseña.text)
-        let isRegistrable = autenticador.IngresarUsuario()
-        if (isRegistrable) { //Verificar el manejo de sentencia if
-            let alert = UIAlertController(
-                  title: "OK",
-                  message: "Ha sido registrado correctamente",
-                  preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
+        Auth.auth().createUser(withEmail: TF_RegisterUsuario.text!, password: TF_RegisterContraseña.text!) { _, error in
+          if error == nil {
+            print("El usuario ha sido registrado correctamente")
+            let alert = UIAlertController(title: "Excelent", message: "El usuario ha sido registrado correctamente", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            let _ : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                    let resultViewController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-                    self.navigationController?.pushViewController(resultViewController, animated: true)
-        } else {
-            let alert = UIAlertController(
-                  title: "ERROR",
-                  message: "No ha sido registrado correctamente. Verifique sus datos e inténtelo nuevamente",
-                  preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            self.present(alert, animated: true, completion: nil)
+            //Llamado a login de nuevo
+            self.navigationController?.popViewController(animated: true)
+          } else {
+            print("Error creando usuario: \(error?.localizedDescription ?? "")")
+          }
         }
     }
+
     func conversionComponentesRedondeados(){
         B_RegisterRegistrarse.layer.cornerRadius = 5; B_RegisterRegistrarse.clipsToBounds = true
         TF_RegisterUsuario.layer.cornerRadius = 10.0; TF_RegisterUsuario.clipsToBounds = true
         TF_RegisterContraseña.layer.cornerRadius = 10.0; TF_RegisterContraseña.clipsToBounds = true
     }
-    
-
 }
+
