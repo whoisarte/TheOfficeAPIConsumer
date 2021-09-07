@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Font_Typist.ttf">
+            <string>Typist</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="esh-DB-azX">
@@ -43,35 +48,39 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bLH-Y3-Kqm">
                                 <rect key="frame" x="16" y="351" width="382" height="72"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-L3-Hab">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-L3-Hab">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
-                                        <attributedString key="attributedText"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-G3-PEE">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-G3-PEE">
                                         <rect key="frame" x="0.0" y="38" width="382" height="34"/>
-                                        <attributedString key="attributedText"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-FX-OdA">
-                                <rect key="frame" x="16" y="453" width="382" height="30"/>
+                                <rect key="frame" x="16" y="453" width="382" height="25"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-fy-Pjn">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="25"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="14"/>
                                         <state key="normal" title="Entrar">
                                             <color key="titleColor" red="0.95840548345961485" green="0.96880411259471111" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="B_LoginEntrar_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="msj-Dz-8Vr"/>
-                                            <segue destination="vKq-hx-WWg" kind="show" identifier="toHomeSegue" id="bzU-W0-qm4"/>
+                                            <segue destination="vKq-hx-WWg" kind="presentation" identifier="toHomeSegue" modalPresentationStyle="fullScreen" id="bzU-W0-qm4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pr-Py-42g">
-                                        <rect key="frame" x="195" y="0.0" width="187" height="30"/>
+                                        <rect key="frame" x="195" y="0.0" width="187" height="25"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="14"/>
                                         <state key="normal" title="Registrarse">
                                             <color key="titleColor" red="0.95840548349999999" green="0.96880411259999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -123,10 +132,10 @@
         <scene sceneID="dpF-vo-VDG">
             <objects>
                 <navigationController modalPresentationStyle="fullScreen" id="T6h-Z6-R7B" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="uKq-oo-6l8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yCL-DI-dP4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="yCL-DI-dP4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.75294117647058822" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="IhF-JI-bMG" kind="relationship" relationship="rootViewController" id="CM0-bk-icZ"/>
@@ -147,21 +156,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-bp-dXZ">
                                 <rect key="frame" x="16" y="176" width="382" height="76"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-dD-dAt">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-dD-dAt">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
-                                        <attributedString key="attributedText"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BL6-gg-oMM">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BL6-gg-oMM">
                                         <rect key="frame" x="0.0" y="42" width="382" height="34"/>
-                                        <attributedString key="attributedText"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-PY-9kK">
-                                <rect key="frame" x="16" y="292" width="382" height="30"/>
+                                <rect key="frame" x="16" y="292" width="382" height="26"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="15"/>
                                 <state key="normal" title="Registrarse">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -170,7 +182,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.-office-building" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-dR-uAG">
-                                <rect key="frame" x="16" y="402" width="382" height="234"/>
+                                <rect key="frame" x="16" y="398" width="382" height="234"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6wo-MG-s8U"/>

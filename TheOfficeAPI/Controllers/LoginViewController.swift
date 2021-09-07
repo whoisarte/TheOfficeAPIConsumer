@@ -24,20 +24,17 @@ class LoginViewController: UIViewController {
               message: error.localizedDescription,
               preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
+            //Mostrar la pestaña en forma de full screen
             self.present(alert, animated: true, completion: nil)
-          } else {
-            self.performSegue(withIdentifier: MainStorySegues.homeSegue, sender: self)
-          }
+            
+          } 
         }
     }
     
     @IBAction func B_LoginRegistrarse_Click(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let registerViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-        
-        registerViewController.hola = "arttemio"
         registerViewController.modalPresentationStyle = .overFullScreen
-        //self.present(registerViewController, animated: true, completion: nil)
         
     }
     //Funciones de diseño

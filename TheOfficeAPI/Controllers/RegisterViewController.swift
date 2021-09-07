@@ -14,7 +14,6 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         title = "The Office HH.RR"
         
-        print(hola)
         conversionComponentesRedondeados()
     }
     

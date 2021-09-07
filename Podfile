@@ -8,4 +8,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 
+#Adding Alamofire for API
+pod 'Alamofire', '~> 5.4'
+
 end
