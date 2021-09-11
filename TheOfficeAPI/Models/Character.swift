@@ -1,12 +1,12 @@
 import Foundation
 
-struct Character: Decodable {
-    var id: String?
-    var firstname: String?
-    var lastname: String?
-}
-enum CodingKeysCharacter: String, CodingKey {
-   case id = "Id",
-    firstname = "Firstname",
-    lastname = "Lastname"
+struct Character: Codable {
+    let id, firstname, lastname: String
+    let v: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
+        case firstname, lastname
+        case v = "__v"
+    }
 }

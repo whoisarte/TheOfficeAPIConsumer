@@ -25,12 +25,10 @@ class LoginViewController: UIViewController {
               preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             //Mostrar la pestaña en forma de full screen
-            self.present(alert, animated: true, completion: nil)
-            
+            self.present(alert, animated: true, completion: nil)   
           } 
         }
     }
-    
     @IBAction func B_LoginRegistrarse_Click(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let registerViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController

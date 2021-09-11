@@ -1,14 +1,13 @@
 import Foundation
 
-struct Quote: Decodable {
-    var id: String?
-    var content: String?
-    var character: String?
-}
+struct Quote: Codable {
+    let id, content: String
+    let character: Character
+    let v: Int
 
-enum CodingKeysQuote: String, CodingKey {
-    case
-        id = "Id",
-        content = "Content",
-        character = "Character"
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
+        case content, character
+        case v = "__v"
+    }
 }

@@ -6,12 +6,10 @@ import Alamofire
 //Ranodm -> https://officeapi.dev/api/episodes/random
 
 
+
 class APIRequestEpisodesService {
     
-    
-    fileprivate var baseURL: String = "https://officeapi.dev/api/episodes/"
-    
-    func getAllEpisodes() {
+    func getAllEpisodes()  {
         AF.request(baseURL, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response{ (responseData) in
             guard let data = responseData.data else {return}
             do {

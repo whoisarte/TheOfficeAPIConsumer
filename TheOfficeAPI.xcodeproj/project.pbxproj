@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C6E83B426E6C97A00A5F7DE /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83B326E6C97A00A5F7DE /* Quote.swift */; };
 		0C6E83B626E6CB9000A5F7DE /* APIRequestQuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83B526E6CB9000A5F7DE /* APIRequestQuotesService.swift */; };
-		0C6E83BB26E7D39700A5F7DE /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83BA26E7D39700A5F7DE /* Episode.swift */; };
-		0C6E83BE26E7EA3100A5F7DE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83BD26E7EA3100A5F7DE /* Character.swift */; };
 		0C6E83C526E80CCC00A5F7DE /* APIRequestEpisodesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83C426E80CCC00A5F7DE /* APIRequestEpisodesService.swift */; };
 		0C6E83C726E81CF300A5F7DE /* APIRequestCharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83C626E81CF300A5F7DE /* APIRequestCharactersService.swift */; };
 		0C6E83CB26E8205A00A5F7DE /* RepositoryQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */; };
 		0C6E83CD26E8206600A5F7DE /* RepositoryEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */; };
+		0C6E83CF26E824A000A5F7DE /* ProtocolQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */; };
 		0C723B1A26E1721C00959EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B1926E1721C00959EE3 /* AppDelegate.swift */; };
 		0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B1B26E1721C00959EE3 /* SceneDelegate.swift */; };
 		0C723B2326E1723300959EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C723B2226E1723300959EE3 /* Assets.xcassets */; };
@@ -25,6 +23,13 @@
 		0C723B5626E188AF00959EE3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C723B5526E188AF00959EE3 /* HomeViewController.swift */; };
 		0CA46A7F26E3C547009D20BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA46A7E26E3C547009D20BE /* GoogleService-Info.plist */; };
 		0CDC314026E2CF150043E9B6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC313F26E2CF150043E9B6 /* Home.storyboard */; };
+		0CF23B0526ECFF7400890BD0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0426ECFF7400890BD0 /* Quote.swift */; };
+		0CF23B0726ECFF8100890BD0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0626ECFF8100890BD0 /* Character.swift */; };
+		0CF23B0926ECFF8900890BD0 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0826ECFF8900890BD0 /* Episode.swift */; };
+		0CF23B0C26ED0E9800890BD0 /* ProtocolEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0B26ED0E9800890BD0 /* ProtocolEpisode.swift */; };
+		0CF23B0E26ED0EA400890BD0 /* RepositoryCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0D26ED0EA400890BD0 /* RepositoryCharacter.swift */; };
+		0CF23B1026ED0EB100890BD0 /* ProtocolCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */; };
+		0CF23B1226ED12CA00890BD0 /* TheOfficeApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B1126ED12CA00890BD0 /* TheOfficeApiEndpoints.swift */; };
 		0CF7C3ED26E6827000ED20B1 /* AuthFirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3EC26E6827000ED20B1 /* AuthFirebaseService.swift */; };
 		0CF7C3F026E6836C00ED20B1 /* MainStorySegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */; };
 		0CF7C3F526E6965E00ED20B1 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3F426E6965E00ED20B1 /* QuotesViewController.swift */; };
@@ -33,14 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C6E83B326E6C97A00A5F7DE /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		0C6E83B526E6CB9000A5F7DE /* APIRequestQuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestQuotesService.swift; sourceTree = "<group>"; };
-		0C6E83BA26E7D39700A5F7DE /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		0C6E83BD26E7EA3100A5F7DE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0C6E83C426E80CCC00A5F7DE /* APIRequestEpisodesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestEpisodesService.swift; sourceTree = "<group>"; };
 		0C6E83C626E81CF300A5F7DE /* APIRequestCharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestCharactersService.swift; sourceTree = "<group>"; };
 		0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuotes.swift; sourceTree = "<group>"; };
 		0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEpisodes.swift; sourceTree = "<group>"; };
+		0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolQuote.swift; sourceTree = "<group>"; };
 		0C723B1626E1721C00959EE3 /* TheOfficeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOfficeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C723B1926E1721C00959EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C723B1B26E1721C00959EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,13 @@
 		0C723B5526E188AF00959EE3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0CA46A7E26E3C547009D20BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CDC313F26E2CF150043E9B6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0CF23B0426ECFF7400890BD0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		0CF23B0626ECFF8100890BD0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0CF23B0826ECFF8900890BD0 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		0CF23B0B26ED0E9800890BD0 /* ProtocolEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolEpisode.swift; sourceTree = "<group>"; };
+		0CF23B0D26ED0EA400890BD0 /* RepositoryCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCharacter.swift; sourceTree = "<group>"; };
+		0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCharacters.swift; sourceTree = "<group>"; };
+		0CF23B1126ED12CA00890BD0 /* TheOfficeApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheOfficeApiEndpoints.swift; sourceTree = "<group>"; };
 		0CF7C3EC26E6827000ED20B1 /* AuthFirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebaseService.swift; sourceTree = "<group>"; };
 		0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorySegues.swift; sourceTree = "<group>"; };
 		0CF7C3F426E6965E00ED20B1 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +98,10 @@
 			children = (
 				0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */,
 				0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */,
+				0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */,
+				0CF23B0B26ED0E9800890BD0 /* ProtocolEpisode.swift */,
+				0CF23B0D26ED0EA400890BD0 /* RepositoryCharacter.swift */,
+				0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -153,9 +167,9 @@
 		0C723B4526E1738400959EE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0C6E83B326E6C97A00A5F7DE /* Quote.swift */,
-				0C6E83BA26E7D39700A5F7DE /* Episode.swift */,
-				0C6E83BD26E7EA3100A5F7DE /* Character.swift */,
+				0CF23B0626ECFF8100890BD0 /* Character.swift */,
+				0CF23B0426ECFF7400890BD0 /* Quote.swift */,
+				0CF23B0826ECFF8900890BD0 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */,
+				0CF23B1126ED12CA00890BD0 /* TheOfficeApiEndpoints.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -322,18 +337,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6E83C726E81CF300A5F7DE /* APIRequestCharactersService.swift in Sources */,
+				0CF23B0E26ED0EA400890BD0 /* RepositoryCharacter.swift in Sources */,
+				0CF23B0926ECFF8900890BD0 /* Episode.swift in Sources */,
 				0C723B4C26E1750200959EE3 /* LoginViewController.swift in Sources */,
+				0CF23B0C26ED0E9800890BD0 /* ProtocolEpisode.swift in Sources */,
 				0C6E83CB26E8205A00A5F7DE /* RepositoryQuotes.swift in Sources */,
 				0C6E83B626E6CB9000A5F7DE /* APIRequestQuotesService.swift in Sources */,
 				0C723B1A26E1721C00959EE3 /* AppDelegate.swift in Sources */,
 				0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */,
-				0C6E83B426E6C97A00A5F7DE /* Quote.swift in Sources */,
 				0CF7C3F926E6968A00ED20B1 /* EpisodesViewController.swift in Sources */,
-				0C6E83BB26E7D39700A5F7DE /* Episode.swift in Sources */,
 				0C723B4F26E1751300959EE3 /* RegisterViewController.swift in Sources */,
+				0C6E83CF26E824A000A5F7DE /* ProtocolQuote.swift in Sources */,
+				0CF23B0726ECFF8100890BD0 /* Character.swift in Sources */,
+				0CF23B1026ED0EB100890BD0 /* ProtocolCharacters.swift in Sources */,
 				0C6E83C526E80CCC00A5F7DE /* APIRequestEpisodesService.swift in Sources */,
-				0C6E83BE26E7EA3100A5F7DE /* Character.swift in Sources */,
 				0CF7C3F026E6836C00ED20B1 /* MainStorySegues.swift in Sources */,
+				0CF23B0526ECFF7400890BD0 /* Quote.swift in Sources */,
+				0CF23B1226ED12CA00890BD0 /* TheOfficeApiEndpoints.swift in Sources */,
 				0CF7C3F526E6965E00ED20B1 /* QuotesViewController.swift in Sources */,
 				0C723B5626E188AF00959EE3 /* HomeViewController.swift in Sources */,
 				0CF7C3ED26E6827000ED20B1 /* AuthFirebaseService.swift in Sources */,
