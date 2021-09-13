@@ -1,13 +1,12 @@
 import Foundation
 import Alamofire
 
-class RepositoryQuotes: ProtocolQuote {
+class RepositoryQuotes: ProtocolQuote  {
     static func getQuoteAll() {
         AF.request(TheOfficeApiEndpoints.urlQuotes, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response{ (responseData) in
             guard let data = responseData.data else {return}
             do {
-            let quotes = try JSONDecoder().decode(Quote.self, from: data)
-                //Cambiar sentencia para mostrar en objetos UI
+                let quotes = try JSONDecoder().decode(Quote.self, from: data)
                 print("Episodes == \(quotes)")
             } catch {
                 print("Error decoding Episodes == \(error)")
@@ -16,12 +15,10 @@ class RepositoryQuotes: ProtocolQuote {
     }
     
     static func getQuoteById() {
-        <#code#>
+        print("")
     }
     
     static func getQuoteRandomly() {
-        <#code#>
+        print("")
     }
-    
-    
 }

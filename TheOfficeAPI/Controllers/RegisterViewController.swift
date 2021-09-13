@@ -1,10 +1,8 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController {
-
+class RegisterViewController: UIViewController, ProtocolRoundComponents {
     
-    var hola = ""
     //Atributos de la vista RegisterView
     @IBOutlet weak var TF_RegisterUsuario: UITextField!
     @IBOutlet weak var TF_RegisterContraseña: UITextField!
@@ -13,8 +11,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office HH.RR"
-        
-        conversionComponentesRedondeados()
+        roundComponents()
     }
     
     @IBAction func B_RegisterRegistrarse_Click(_ sender: Any) {
@@ -31,11 +28,12 @@ class RegisterViewController: UIViewController {
           }
         }
     }
-
-    func conversionComponentesRedondeados(){
+    
+     func roundComponents() {
         B_RegisterRegistrarse.layer.cornerRadius = 5; B_RegisterRegistrarse.clipsToBounds = true
         TF_RegisterUsuario.layer.cornerRadius = 10.0; TF_RegisterUsuario.clipsToBounds = true
         TF_RegisterContraseña.layer.cornerRadius = 10.0; TF_RegisterContraseña.clipsToBounds = true
     }
+
 }
 

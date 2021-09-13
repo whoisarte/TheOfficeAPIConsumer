@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C6E83B626E6CB9000A5F7DE /* APIRequestQuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83B526E6CB9000A5F7DE /* APIRequestQuotesService.swift */; };
-		0C6E83C526E80CCC00A5F7DE /* APIRequestEpisodesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83C426E80CCC00A5F7DE /* APIRequestEpisodesService.swift */; };
-		0C6E83C726E81CF300A5F7DE /* APIRequestCharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83C626E81CF300A5F7DE /* APIRequestCharactersService.swift */; };
 		0C6E83CB26E8205A00A5F7DE /* RepositoryQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */; };
 		0C6E83CD26E8206600A5F7DE /* RepositoryEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */; };
 		0C6E83CF26E824A000A5F7DE /* ProtocolQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */; };
@@ -30,17 +27,19 @@
 		0CF23B0E26ED0EA400890BD0 /* RepositoryCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0D26ED0EA400890BD0 /* RepositoryCharacter.swift */; };
 		0CF23B1026ED0EB100890BD0 /* ProtocolCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */; };
 		0CF23B1226ED12CA00890BD0 /* TheOfficeApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B1126ED12CA00890BD0 /* TheOfficeApiEndpoints.swift */; };
+		0CF23B1426ED184700890BD0 /* APIServiceEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B1326ED184700890BD0 /* APIServiceEpisodes.swift */; };
+		0CF23B1626ED185C00890BD0 /* APIServiceQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B1526ED185C00890BD0 /* APIServiceQuotes.swift */; };
+		0CF23B1826ED186600890BD0 /* APIServiceCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B1726ED186600890BD0 /* APIServiceCharacters.swift */; };
+		0CF23B1B26ED27EE00890BD0 /* ProtocolRoundComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23B1A26ED27EE00890BD0 /* ProtocolRoundComponents.swift */; };
 		0CF7C3ED26E6827000ED20B1 /* AuthFirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3EC26E6827000ED20B1 /* AuthFirebaseService.swift */; };
 		0CF7C3F026E6836C00ED20B1 /* MainStorySegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */; };
 		0CF7C3F526E6965E00ED20B1 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3F426E6965E00ED20B1 /* QuotesViewController.swift */; };
 		0CF7C3F926E6968A00ED20B1 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7C3F826E6968A00ED20B1 /* EpisodesViewController.swift */; };
+		0CF9FB2C26EFD065009E17F0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9FB2B26EFD065009E17F0 /* Data.swift */; };
 		BF403BFB09F13910532FE819 /* Pods_TheOfficeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381DBEE08599398A4F28ED2D /* Pods_TheOfficeAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C6E83B526E6CB9000A5F7DE /* APIRequestQuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestQuotesService.swift; sourceTree = "<group>"; };
-		0C6E83C426E80CCC00A5F7DE /* APIRequestEpisodesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestEpisodesService.swift; sourceTree = "<group>"; };
-		0C6E83C626E81CF300A5F7DE /* APIRequestCharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestCharactersService.swift; sourceTree = "<group>"; };
 		0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuotes.swift; sourceTree = "<group>"; };
 		0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEpisodes.swift; sourceTree = "<group>"; };
 		0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolQuote.swift; sourceTree = "<group>"; };
@@ -64,10 +63,15 @@
 		0CF23B0D26ED0EA400890BD0 /* RepositoryCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCharacter.swift; sourceTree = "<group>"; };
 		0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCharacters.swift; sourceTree = "<group>"; };
 		0CF23B1126ED12CA00890BD0 /* TheOfficeApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheOfficeApiEndpoints.swift; sourceTree = "<group>"; };
+		0CF23B1326ED184700890BD0 /* APIServiceEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceEpisodes.swift; sourceTree = "<group>"; };
+		0CF23B1526ED185C00890BD0 /* APIServiceQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceQuotes.swift; sourceTree = "<group>"; };
+		0CF23B1726ED186600890BD0 /* APIServiceCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceCharacters.swift; sourceTree = "<group>"; };
+		0CF23B1A26ED27EE00890BD0 /* ProtocolRoundComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolRoundComponents.swift; sourceTree = "<group>"; };
 		0CF7C3EC26E6827000ED20B1 /* AuthFirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebaseService.swift; sourceTree = "<group>"; };
 		0CF7C3EF26E6836C00ED20B1 /* MainStorySegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorySegues.swift; sourceTree = "<group>"; };
 		0CF7C3F426E6965E00ED20B1 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		0CF7C3F826E6968A00ED20B1 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		0CF9FB2B26EFD065009E17F0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		381DBEE08599398A4F28ED2D /* Pods_TheOfficeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheOfficeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A10959938AE0741D743A4F3 /* Pods-TheOfficeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOfficeAPI.debug.xcconfig"; path = "Target Support Files/Pods-TheOfficeAPI/Pods-TheOfficeAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		645F4595880017A03E1BE9BE /* Pods-TheOfficeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOfficeAPI.release.xcconfig"; path = "Target Support Files/Pods-TheOfficeAPI/Pods-TheOfficeAPI.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,12 +100,9 @@
 		0C6E83C826E8204200A5F7DE /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */,
-				0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */,
-				0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */,
-				0CF23B0B26ED0E9800890BD0 /* ProtocolEpisode.swift */,
 				0CF23B0D26ED0EA400890BD0 /* RepositoryCharacter.swift */,
-				0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */,
+				0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */,
+				0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -109,10 +110,10 @@
 		0C723B0D26E1721C00959EE3 = {
 			isa = PBXGroup;
 			children = (
-				0C723B1826E1721C00959EE3 /* TheOfficeAPI */,
-				0C723B1726E1721C00959EE3 /* Products */,
-				800348BA582BFB383091E72C /* Pods */,
 				1D6F70A35AD0B00E29A82F7F /* Frameworks */,
+				800348BA582BFB383091E72C /* Pods */,
+				0C723B1726E1721C00959EE3 /* Products */,
+				0C723B1826E1721C00959EE3 /* TheOfficeAPI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +128,7 @@
 		0C723B1826E1721C00959EE3 /* TheOfficeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0CF23B1926ED27D400890BD0 /* Protocols */,
 				0C6E83C826E8204200A5F7DE /* Repositories */,
 				0C6E83BC26E7D68B00A5F7DE /* Fonts */,
 				0CF7C3EE26E6834600ED20B1 /* Constants */,
@@ -147,10 +149,10 @@
 		0C723B4326E1736D00959EE3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CF7C3F126E6962300ED20B1 /* RequestsViewControllers */,
+				0C723B5526E188AF00959EE3 /* HomeViewController.swift */,
 				0C723B4B26E1750200959EE3 /* LoginViewController.swift */,
 				0C723B4E26E1751300959EE3 /* RegisterViewController.swift */,
-				0C723B5526E188AF00959EE3 /* HomeViewController.swift */,
+				0CF7C3F126E6962300ED20B1 /* RequestsViewControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,8 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				0CF23B0626ECFF8100890BD0 /* Character.swift */,
-				0CF23B0426ECFF7400890BD0 /* Quote.swift */,
 				0CF23B0826ECFF8900890BD0 /* Episode.swift */,
+				0CF23B0426ECFF7400890BD0 /* Quote.swift */,
+				0CF9FB2B26EFD065009E17F0 /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,12 +180,23 @@
 		0CDFD35226E2AED900B7B83F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0CF23B1726ED186600890BD0 /* APIServiceCharacters.swift */,
+				0CF23B1326ED184700890BD0 /* APIServiceEpisodes.swift */,
+				0CF23B1526ED185C00890BD0 /* APIServiceQuotes.swift */,
 				0CF7C3EC26E6827000ED20B1 /* AuthFirebaseService.swift */,
-				0C6E83B526E6CB9000A5F7DE /* APIRequestQuotesService.swift */,
-				0C6E83C426E80CCC00A5F7DE /* APIRequestEpisodesService.swift */,
-				0C6E83C626E81CF300A5F7DE /* APIRequestCharactersService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0CF23B1926ED27D400890BD0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0CF23B0F26ED0EB100890BD0 /* ProtocolCharacters.swift */,
+				0CF23B0B26ED0E9800890BD0 /* ProtocolEpisode.swift */,
+				0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */,
+				0CF23B1A26ED27EE00890BD0 /* ProtocolRoundComponents.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		0CF7C3EE26E6834600ED20B1 /* Constants */ = {
@@ -336,27 +350,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C6E83C726E81CF300A5F7DE /* APIRequestCharactersService.swift in Sources */,
 				0CF23B0E26ED0EA400890BD0 /* RepositoryCharacter.swift in Sources */,
+				0CF23B1626ED185C00890BD0 /* APIServiceQuotes.swift in Sources */,
 				0CF23B0926ECFF8900890BD0 /* Episode.swift in Sources */,
 				0C723B4C26E1750200959EE3 /* LoginViewController.swift in Sources */,
 				0CF23B0C26ED0E9800890BD0 /* ProtocolEpisode.swift in Sources */,
 				0C6E83CB26E8205A00A5F7DE /* RepositoryQuotes.swift in Sources */,
-				0C6E83B626E6CB9000A5F7DE /* APIRequestQuotesService.swift in Sources */,
 				0C723B1A26E1721C00959EE3 /* AppDelegate.swift in Sources */,
+				0CF9FB2C26EFD065009E17F0 /* Data.swift in Sources */,
 				0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */,
 				0CF7C3F926E6968A00ED20B1 /* EpisodesViewController.swift in Sources */,
 				0C723B4F26E1751300959EE3 /* RegisterViewController.swift in Sources */,
 				0C6E83CF26E824A000A5F7DE /* ProtocolQuote.swift in Sources */,
 				0CF23B0726ECFF8100890BD0 /* Character.swift in Sources */,
 				0CF23B1026ED0EB100890BD0 /* ProtocolCharacters.swift in Sources */,
-				0C6E83C526E80CCC00A5F7DE /* APIRequestEpisodesService.swift in Sources */,
 				0CF7C3F026E6836C00ED20B1 /* MainStorySegues.swift in Sources */,
 				0CF23B0526ECFF7400890BD0 /* Quote.swift in Sources */,
 				0CF23B1226ED12CA00890BD0 /* TheOfficeApiEndpoints.swift in Sources */,
+				0CF23B1826ED186600890BD0 /* APIServiceCharacters.swift in Sources */,
 				0CF7C3F526E6965E00ED20B1 /* QuotesViewController.swift in Sources */,
+				0CF23B1B26ED27EE00890BD0 /* ProtocolRoundComponents.swift in Sources */,
 				0C723B5626E188AF00959EE3 /* HomeViewController.swift in Sources */,
 				0CF7C3ED26E6827000ED20B1 /* AuthFirebaseService.swift in Sources */,
+				0CF23B1426ED184700890BD0 /* APIServiceEpisodes.swift in Sources */,
 				0C6E83CD26E8206600A5F7DE /* RepositoryEpisodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,10 +1,9 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, ProtocolRoundComponents {
     
     //Atributos de la vista LoginView
-    
     @IBOutlet weak var TF_LoginUsuario: UITextField!
     @IBOutlet weak var TF_LoginContraseña: UITextField!
     @IBOutlet weak var B_LoginEntrar: UIButton!
@@ -13,7 +12,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office Entrance"
-        conversionComponentesRedondeados()
+        roundComponents()
+        let _: () = RepositoryQuotes.getQuoteAll()
+        
         
     }
     @IBAction func B_LoginEntrar_Click(_ sender: Any) {
@@ -36,11 +37,10 @@ class LoginViewController: UIViewController {
         
     }
     //Funciones de diseño
-    func conversionComponentesRedondeados(){
+    func roundComponents(){
         B_LoginEntrar.layer.cornerRadius = 5; B_LoginEntrar.clipsToBounds = true
         B_LoginRegistrarse.layer.cornerRadius = 5; B_LoginRegistrarse.clipsToBounds = true
         TF_LoginUsuario.layer.cornerRadius = 10.0; TF_LoginUsuario.clipsToBounds = true
         TF_LoginContraseña.layer.cornerRadius = 10.0; TF_LoginContraseña.clipsToBounds = true
     }
-    
 }

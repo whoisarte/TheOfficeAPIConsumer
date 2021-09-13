@@ -2,7 +2,6 @@ import Foundation
 import Alamofire
 
 class RepositoryEpisodes: ProtocolEpisode {
-    
     static func getEpisodeAll() {
         AF.request(TheOfficeApiEndpoints.urlEpisodes, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response{ (responseData) in
             guard let data = responseData.data else {return}
@@ -17,12 +16,14 @@ class RepositoryEpisodes: ProtocolEpisode {
     }
     
     static func getEpisodeById() {
-        <#code#>
+        print("")
+
     }
     
     static func getEpisodeRandomly() {
-        <#code#>
+        print("")
+
     }
     
-    
+
 }
