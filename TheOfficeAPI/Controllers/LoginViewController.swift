@@ -9,12 +9,16 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
     @IBOutlet weak var B_LoginEntrar: UIButton!
     @IBOutlet weak var B_LoginRegistrarse: UIButton!
     
+    var arrayIds: [String] = []
+    var arrayContents: [String] = []
+    var arrayCharacters: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office Entrance"
         roundComponents()
-        let _: () = RepositoryQuotes.getQuoteAll()
-        
+        print("* * * * * * * * ALLDATA * * * * * * * *")
+        RepositoryEpisodes.getEpisodeAll()
         
     }
     @IBAction func B_LoginEntrar_Click(_ sender: Any) {
@@ -26,8 +30,10 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
               preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             //Mostrar la pestaña en forma de full screen
-            self.present(alert, animated: true, completion: nil)   
-          } 
+            self.present(alert, animated: true, completion: nil)
+          } else {
+            self.performSegue(withIdentifier: MainStorySegues.homeSegue, sender: self)
+          }
         }
     }
     @IBAction func B_LoginRegistrarse_Click(_ sender: Any) {

@@ -3,4 +3,116 @@
    uuid = "8E695D75-919E-47E0-A056-1BCF7E7AC3A2"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B57EA9CB-7A24-4FFF-B938-D7597029581B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheOfficeAPI/Repositories/RepositoryQuotes.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "RepositoryQuotes"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B57EA9CB-7A24-4FFF-B938-D7597029581B - b8618b25cd5ecea0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TheOfficeAPI.RepositoryQuotes.deinit"
+                  moduleName = "TheOfficeAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whthfcksrt/Desktop/DevProjects/DevMX/FromGithub/TheOfficeAPIConsumer/TheOfficeAPI/Repositories/RepositoryQuotes.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "B57EA9CB-7A24-4FFF-B938-D7597029581B - 84c9b46fcc72c9ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TheOfficeAPI.RepositoryQuotes.__deallocating_deinit"
+                  moduleName = "TheOfficeAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whthfcksrt/Desktop/DevProjects/DevMX/FromGithub/TheOfficeAPIConsumer/TheOfficeAPI/Repositories/RepositoryQuotes.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "B57EA9CB-7A24-4FFF-B938-D7597029581B - ba80826b8a664e22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TheOfficeAPI.RepositoryQuotes.__allocating_init() -&gt; TheOfficeAPI.RepositoryQuotes"
+                  moduleName = "TheOfficeAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whthfcksrt/Desktop/DevProjects/DevMX/FromGithub/TheOfficeAPIConsumer/TheOfficeAPI/Repositories/RepositoryQuotes.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "B57EA9CB-7A24-4FFF-B938-D7597029581B - 442596aba0c68977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TheOfficeAPI.RepositoryQuotes.init() -&gt; TheOfficeAPI.RepositoryQuotes"
+                  moduleName = "TheOfficeAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whthfcksrt/Desktop/DevProjects/DevMX/FromGithub/TheOfficeAPIConsumer/TheOfficeAPI/Repositories/RepositoryQuotes.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B620DD67-6D4D-4E78-B2AB-B291C5C69F31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheOfficeAPI/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEE5063C-0A81-4CE7-A135-00F6DD4F1E23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheOfficeAPI/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -12,4 +12,6 @@ pod 'Firebase/Firestore'
 pod 'Alamofire', '~> 5.4'
 
 pod 'SwiftyJSON', '~> 4.0'
+
+#pod 'AlamofireObjectMapper', '~> 5.2'
 end

@@ -2,6 +2,9 @@ import Foundation
 
 // MARK: - Quote
 struct Quote: Codable {
-    let data: Data.QuoteData
+    let data: [DataClassQuote]
 }
 
+struct QuoteRandom: Codable {
+    let data: DataClassQuote
+}
