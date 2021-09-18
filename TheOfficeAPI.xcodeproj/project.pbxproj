@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C69390626F65F9E00ABCE14 /* QuoteRandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C69390526F65F9E00ABCE14 /* QuoteRandomViewController.swift */; };
+		0C69390826F65FAB00ABCE14 /* EpisodeRandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C69390726F65FAB00ABCE14 /* EpisodeRandomViewController.swift */; };
 		0C6E83CB26E8205A00A5F7DE /* RepositoryQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */; };
 		0C6E83CD26E8206600A5F7DE /* RepositoryEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */; };
 		0C6E83CF26E824A000A5F7DE /* ProtocolQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C69390526F65F9E00ABCE14 /* QuoteRandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteRandomViewController.swift; sourceTree = "<group>"; };
+		0C69390726F65FAB00ABCE14 /* EpisodeRandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRandomViewController.swift; sourceTree = "<group>"; };
 		0C6E83CA26E8205A00A5F7DE /* RepositoryQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQuotes.swift; sourceTree = "<group>"; };
 		0C6E83CC26E8206600A5F7DE /* RepositoryEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEpisodes.swift; sourceTree = "<group>"; };
 		0C6E83CE26E824A000A5F7DE /* ProtocolQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolQuote.swift; sourceTree = "<group>"; };
@@ -143,7 +147,7 @@
 				0C723B5526E188AF00959EE3 /* HomeViewController.swift */,
 				0C723B4B26E1750200959EE3 /* LoginViewController.swift */,
 				0C723B4E26E1751300959EE3 /* RegisterViewController.swift */,
-				0CF7C3F126E6962300ED20B1 /* RequestsViewControllers */,
+				0CF7C3F126E6962300ED20B1 /* DataVisualizers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,13 +200,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		0CF7C3F126E6962300ED20B1 /* RequestsViewControllers */ = {
+		0CF7C3F126E6962300ED20B1 /* DataVisualizers */ = {
 			isa = PBXGroup;
 			children = (
 				0CF7C3F426E6965E00ED20B1 /* QuotesViewController.swift */,
 				0CF7C3F826E6968A00ED20B1 /* EpisodesViewController.swift */,
+				0C69390526F65F9E00ABCE14 /* QuoteRandomViewController.swift */,
+				0C69390726F65FAB00ABCE14 /* EpisodeRandomViewController.swift */,
 			);
-			path = RequestsViewControllers;
+			path = DataVisualizers;
 			sourceTree = "<group>";
 		};
 		1D6F70A35AD0B00E29A82F7F /* Frameworks */ = {
@@ -341,6 +347,7 @@
 				0C723B4C26E1750200959EE3 /* LoginViewController.swift in Sources */,
 				0CF23B0C26ED0E9800890BD0 /* ProtocolEpisode.swift in Sources */,
 				0C6E83CB26E8205A00A5F7DE /* RepositoryQuotes.swift in Sources */,
+				0C69390826F65FAB00ABCE14 /* EpisodeRandomViewController.swift in Sources */,
 				0C723B1A26E1721C00959EE3 /* AppDelegate.swift in Sources */,
 				0C723B1C26E1721C00959EE3 /* SceneDelegate.swift in Sources */,
 				0CF7C3F926E6968A00ED20B1 /* EpisodesViewController.swift in Sources */,
@@ -358,6 +365,7 @@
 				0C8B885326F529CE009FAB4E /* Director.swift in Sources */,
 				0C8B884F26F50494009FAB4E /* Episode.swift in Sources */,
 				0C6E83CD26E8206600A5F7DE /* RepositoryEpisodes.swift in Sources */,
+				0C69390626F65F9E00ABCE14 /* QuoteRandomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
