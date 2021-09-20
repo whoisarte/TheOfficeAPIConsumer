@@ -8,17 +8,11 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
     @IBOutlet weak var TF_LoginContraseña: UITextField!
     @IBOutlet weak var B_LoginEntrar: UIButton!
     @IBOutlet weak var B_LoginRegistrarse: UIButton!
-    
-    var arrayIds: [String] = []
-    var arrayContents: [String] = []
-    var arrayCharacters: [String] = []
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office Entrance"
         roundComponents()
-        print("* * * * * * * * ALLDATA * * * * * * * *")
-        RepositoryEpisodes.getEpisodeAll()
         
     }
     @IBAction func B_LoginEntrar_Click(_ sender: Any) {

@@ -8,3 +8,4 @@ struct Quote: Codable {
 struct QuoteRandom: Codable {
     let data: DataClassQuote
 }
+
