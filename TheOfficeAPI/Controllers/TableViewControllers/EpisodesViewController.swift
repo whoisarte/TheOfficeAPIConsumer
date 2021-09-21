@@ -10,23 +10,26 @@ import UIKit
 class EpisodesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var IBO_EpisodesTableView: UITableView!
     
-    let episodes: [DataClassEpisode]! = nil
+    var episodes: [DataClassEpisode] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        setDataToEpisodes()
         return episodes.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = IBO_EpisodesTableView.dequeueReusableCell(withIdentifier: "episodeCell", for: indexPath) as! EpisodesCell
+        setDataToEpisodes()
+        let cell = self.IBO_EpisodesTableView.dequeueReusableCell(withIdentifier: "episodeCell", for: indexPath) as! EpisodesCell
         cell.configure(episode: episodes[indexPath.row])
         return cell
     }
     
-    
-
+    func setDataToEpisodes(){
+        RepositoryEpisodes.getEpisodeAll { data in
+            self.episodes = data
+        }
+    }
 }

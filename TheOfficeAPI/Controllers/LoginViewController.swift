@@ -9,6 +9,9 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
     @IBOutlet weak var B_LoginEntrar: UIButton!
     @IBOutlet weak var B_LoginRegistrarse: UIButton!
   
+    //Arreglo de prueba
+    var allQuotes: [DataClassQuote]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office Entrance"

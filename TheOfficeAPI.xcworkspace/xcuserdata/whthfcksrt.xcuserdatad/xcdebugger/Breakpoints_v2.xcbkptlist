@@ -101,16 +101,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BBFCF6D2-557A-4288-B6B0-B51904095B59"
-            shouldBeEnabled = "Yes"
+            uuid = "C2AD4AE7-244B-4C64-83A5-922ED085B534"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TheOfficeAPI/Repositories/RepositoryEpisodes.swift"
+            filePath = "TheOfficeAPI/Controllers/TableViewControllers/QuotesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "getEpisodeAll()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

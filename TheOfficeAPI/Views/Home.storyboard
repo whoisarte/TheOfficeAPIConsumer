@@ -69,6 +69,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Consumidor de TO" id="4ja-RG-yJK"/>
+                    <connections>
+                        <outlet property="IBO_ButtonEpisodes" destination="SbR-mY-iEd" id="wZh-Fn-Q5y"/>
+                        <outlet property="IBO_ButtonQuotes" destination="FaC-Ku-vco" id="CKo-Vc-who"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvB-cQ-aoU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,8 +140,8 @@
                     <tabBarItem key="tabBarItem" title="Random" image="circle" catalog="system" id="UJz-Yn-UIa"/>
                     <connections>
                         <outlet property="IBO_ButtonRecargar" destination="rnb-4G-Trd" id="8fa-Tp-nq8"/>
-                        <outlet property="IBO_Character" destination="rlV-Uj-DlT" id="mK8-o1-V6r"/>
-                        <outlet property="IBO_Quote" destination="d8Q-UF-kzx" id="iLS-il-G7R"/>
+                        <outlet property="IBO_Character" destination="rlV-Uj-DlT" id="gE6-Gx-6RW"/>
+                        <outlet property="IBO_Quote" destination="d8Q-UF-kzx" id="4zO-9v-6JJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKe-wn-A6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -256,7 +260,49 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSl-S1-Nca">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p2X-26-dzO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="102.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tC-jk-yOx">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW0-sg-Cdx">
+                                                <rect key="frame" x="0.0" y="20.5" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoC-Dz-3ab">
+                                                <rect key="frame" x="0.0" y="41" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7E-xW-xEI">
+                                                <rect key="frame" x="0.0" y="61.5" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17h-wa-OeR">
+                                                <rect key="frame" x="0.0" y="82" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="p2X-26-dzO" firstAttribute="leading" secondItem="pSl-S1-Nca" secondAttribute="leading" id="Hij-N8-nh4"/>
+                                    <constraint firstAttribute="trailing" secondItem="p2X-26-dzO" secondAttribute="trailing" id="Idz-Bb-9rv"/>
+                                    <constraint firstItem="p2X-26-dzO" firstAttribute="top" secondItem="pSl-S1-Nca" secondAttribute="top" id="uyv-k7-8MZ"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGn-JR-2Qt">
                                 <rect key="frame" x="265" y="82" width="139" height="25"/>
@@ -282,6 +328,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Random" image="circle" catalog="system" id="tIS-3n-gDk"/>
+                    <connections>
+                        <outlet property="LBO_EpisodeAirDate" destination="GoC-Dz-3ab" id="mDS-FO-5ik"/>
+                        <outlet property="LBO_EpisodeDescription" destination="iW0-sg-Cdx" id="mbV-pW-it6"/>
+                        <outlet property="LBO_EpisodeDirector" destination="17h-wa-OeR" id="H8Y-kr-G8f"/>
+                        <outlet property="LBO_EpisodeTitle" destination="4tC-jk-yOx" id="xky-uw-i4Q"/>
+                        <outlet property="LBO_EpisodeWriter" destination="B7E-xW-xEI" id="3Iw-IP-LsH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5S-JB-AEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
