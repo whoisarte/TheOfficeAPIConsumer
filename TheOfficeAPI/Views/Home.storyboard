@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="24"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="13"/>
-                                        <state key="normal" title="Quotes">
+                                        <state key="normal" title="Episodes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -45,7 +45,7 @@
                                         <rect key="frame" x="0.0" y="39" width="334" height="24"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="13"/>
-                                        <state key="normal" title="Episodes">
+                                        <state key="normal" title="Quotes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -443,6 +443,7 @@
                 <navigationController storyboardIdentifier="toHomeSegue" automaticallyAdjustsScrollViewInsets="NO" id="rL5-sf-Nsu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="z0t-Ty-IcB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

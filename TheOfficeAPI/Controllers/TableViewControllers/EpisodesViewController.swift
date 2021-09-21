@@ -30,6 +30,7 @@ class EpisodesViewController: UIViewController, UITableViewDelegate, UITableView
     func setDataToEpisodes(){
         RepositoryEpisodes.getEpisodeAll { data in
             self.episodes = data
+            self.IBO_EpisodesTableView.reloadData()
         }
     }
 }

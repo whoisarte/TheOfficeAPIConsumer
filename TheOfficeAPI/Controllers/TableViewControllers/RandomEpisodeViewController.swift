@@ -14,10 +14,7 @@ class RandomEpisodeViewController: UIViewController {
     @IBOutlet weak var LBO_EpisodeAirDate: UILabel!
     @IBOutlet weak var LBO_EpisodeWriter: UILabel!
     @IBOutlet weak var LBO_EpisodeDirector: UILabel!
-    
-    //Objeto de episodio random
-    var episodio: DataClassEpisodeRandom!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setDataToEpisode()
@@ -25,13 +22,12 @@ class RandomEpisodeViewController: UIViewController {
     
     func setDataToEpisode(){
          RepositoryEpisodes.getEpisodeRandomly { data in
-            self.episodio = data
-        }
-        LBO_EpisodeTitle.text = episodio.title
-        LBO_EpisodeDescription.text = episodio.dataDescription
-        LBO_EpisodeAirDate.text = episodio.airDate
-        LBO_EpisodeWriter.text = episodio.writer
-        LBO_EpisodeDirector.text = episodio.director
+            self.LBO_EpisodeTitle.text = data.title
+            self.LBO_EpisodeDescription.text = data.dataDescription
+            self.LBO_EpisodeAirDate.text = data.airDate
+            self.LBO_EpisodeWriter.text = data.writer
+            self.LBO_EpisodeDirector.text = data.director
+         }
     }
     
     

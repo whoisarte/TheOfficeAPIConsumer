@@ -17,11 +17,11 @@ class QuotesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         setDataToQuotes()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        setDataToQuotes()
+        //setDataToQuotes()
         return quotes.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        setDataToQuotes()
+        //setDataToQuotes()
         let cell = IBO_QuotesTableView.dequeueReusableCell(withIdentifier: "quoteCell", for: indexPath) as! QuotesCell
         cell.configure(quote: quotes[indexPath.row])
         return cell
@@ -29,6 +29,7 @@ class QuotesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func setDataToQuotes(){
         RepositoryQuotes.getQuoteAll { data in
             self.quotes = data
+            self.IBO_QuotesTableView.reloadData()
         }
     }
     

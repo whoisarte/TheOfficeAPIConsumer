@@ -11,10 +11,6 @@ class RandomQuoteViewController: UIViewController {
 
     @IBOutlet weak var IBO_Quote: UILabel!
     @IBOutlet weak var IBO_Character: UILabel!
-    
-    //Objeto para asignar el quote random
-    var quote: DataClassQuote!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setDataToQuote()
@@ -22,10 +18,9 @@ class RandomQuoteViewController: UIViewController {
     
     func setDataToQuote(){
         RepositoryQuotes.getQuoteRandomly { data in
-            self.quote = data
+            self.IBO_Quote.text = data.content
+            self.IBO_Character.text = "\(data.character.firstname) \(data.character.lastname)"
         }
-        IBO_Quote.text = quote.content
-        IBO_Character.text = "\(quote.character.firstname) \(quote.character.lastname)"
     }
 
 }

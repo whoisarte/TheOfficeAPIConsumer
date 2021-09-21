@@ -72,7 +72,6 @@
                                         </state>
                                         <connections>
                                             <action selector="B_LoginEntrar_Click:" destination="KlR-jO-aIZ" eventType="touchUpInside" id="msj-Dz-8Vr"/>
-                                            <segue destination="OsL-nV-qg5" kind="presentation" identifier="toHomeSegue" modalPresentationStyle="fullScreen" id="P3L-1s-cZ2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pr-Py-42g">
