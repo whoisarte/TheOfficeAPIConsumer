@@ -29,7 +29,10 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
             //Mostrar la pestaña en forma de full screen
             self.present(alert, animated: true, completion: nil)
           } else {
-            self.performSegue(withIdentifier: MainStorySegues.homeSegue, sender: self)
+            //self.performSegue(withIdentifier: MainStorySegues.homeSegue, sender: self)
+            let storyboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.show(vc, sender: self)
           }
         }
     }

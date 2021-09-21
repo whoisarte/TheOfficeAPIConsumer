@@ -8,9 +8,11 @@ class RepositoryEpisodes: ProtocolEpisode  {
             do {
                 let datos: Episode = try JSONDecoder().decode(Episode.self, from: data)
                 let contenido: [DataClassEpisode] = datos.data
+                /*
                 for i in contenido {
                     print("\n\(i.id) : \(i.airDate) : \(i.title) : \(i.datumDescription): \(i.director.name) : \(i.writer.name)")
                 }
+                */
                 completion(contenido)
             } catch {
                 print("Error decoding data from episodes: \(error.localizedDescription)")
@@ -23,7 +25,7 @@ class RepositoryEpisodes: ProtocolEpisode  {
             do {
                 let datos: EpisodeRandom = try JSONDecoder().decode(EpisodeRandom.self, from: data)
                 let contenido: DataClassEpisodeRandom = datos.data
-                print("\n\(contenido.id) : \(contenido.airDate) : \(contenido.title) : \(contenido.dataDescription): \(contenido.director) : \(contenido.writer)")
+                //print("\n\(contenido.id) : \(contenido.airDate) : \(contenido.title) : \(contenido.dataDescription): \(contenido.director) : \(contenido.writer)")
                 completion(contenido)
             } catch {
                 print("Error decoding data from episode: \(error.localizedDescription)")

@@ -18,13 +18,18 @@ class RegisterViewController: UIViewController, ProtocolRoundComponents {
         Auth.auth().createUser(withEmail: TF_RegisterUsuario.text!, password: TF_RegisterContraseña.text!) { _, error in
           if error == nil {
             print("El usuario ha sido registrado correctamente")
-            let alert = UIAlertController(title: "Excelent", message: "El usuario ha sido registrado correctamente", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Excelent!", message: "El usuario ha sido registrado correctamente", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             //Llamado a login de nuevo
             self.navigationController?.popViewController(animated: true)
           } else {
-            print("Error creando usuario: \(error?.localizedDescription ?? "")")
+            print("El usuario ha sido registrado correctamente")
+            let alert = UIAlertController(title: "ERROR", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            //Llamado a login de nuevo
+            self.navigationController?.popViewController(animated: true)
           }
         }
     }

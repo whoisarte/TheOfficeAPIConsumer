@@ -112,34 +112,18 @@
                                     <constraint firstAttribute="trailing" secondItem="d8Q-UF-kzx" secondAttribute="trailing" constant="30" id="n6R-J3-6f9"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnb-4G-Trd">
-                                <rect key="frame" x="305" y="87" width="99" height="25"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="14"/>
-                                <state key="normal" title="Mostrar frase">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                </state>
-                                <connections>
-                                    <action selector="ActionRecargar_Click:" destination="Ufy-O9-xgZ" eventType="touchUpInside" id="MgT-FO-DFm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p5w-OJ-RYF"/>
                         <color key="backgroundColor" red="0.75294117647058822" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="YeA-jc-N1P" secondAttribute="bottom" id="5cf-2U-dH5"/>
                             <constraint firstItem="YeA-jc-N1P" firstAttribute="leading" secondItem="p5w-OJ-RYF" secondAttribute="leading" id="H7w-vG-6Rh"/>
-                            <constraint firstItem="YeA-jc-N1P" firstAttribute="top" secondItem="rnb-4G-Trd" secondAttribute="bottom" constant="28" id="ZRs-7B-8ge"/>
                             <constraint firstItem="p5w-OJ-RYF" firstAttribute="trailing" secondItem="YeA-jc-N1P" secondAttribute="trailing" id="ZtO-Q7-6pt"/>
-                            <constraint firstAttribute="bottom" secondItem="rnb-4G-Trd" secondAttribute="bottom" constant="784" id="hXh-Qt-o1n"/>
                             <constraint firstItem="YeA-jc-N1P" firstAttribute="top" secondItem="p5w-OJ-RYF" secondAttribute="top" id="oOT-zB-SAK"/>
-                            <constraint firstAttribute="trailing" secondItem="rnb-4G-Trd" secondAttribute="trailing" constant="10" id="rGI-Hg-LsC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Random" image="circle" catalog="system" id="UJz-Yn-UIa"/>
                     <connections>
-                        <outlet property="IBO_ButtonRecargar" destination="rnb-4G-Trd" id="8fa-Tp-nq8"/>
                         <outlet property="IBO_Character" destination="rlV-Uj-DlT" id="gE6-Gx-6RW"/>
                         <outlet property="IBO_Quote" destination="d8Q-UF-kzx" id="4zO-9v-6JJ"/>
                     </connections>
@@ -304,26 +288,13 @@
                                     <constraint firstItem="p2X-26-dzO" firstAttribute="top" secondItem="pSl-S1-Nca" secondAttribute="top" id="uyv-k7-8MZ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGn-JR-2Qt">
-                                <rect key="frame" x="265" y="82" width="139" height="25"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Typist" family="Typist" pointSize="14"/>
-                                <state key="normal" title="Mostrar episodio">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                </state>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kvq-KJ-I2b"/>
                         <color key="backgroundColor" red="0.75294117647058822" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="IGn-JR-2Qt" secondAttribute="trailing" constant="10" id="0M8-vp-YsB"/>
                             <constraint firstItem="pSl-S1-Nca" firstAttribute="top" secondItem="kvq-KJ-I2b" secondAttribute="top" id="89g-o6-vbR"/>
-                            <constraint firstAttribute="bottom" secondItem="IGn-JR-2Qt" secondAttribute="bottom" constant="789" id="BKy-ay-13h"/>
-                            <constraint firstItem="pSl-S1-Nca" firstAttribute="top" secondItem="IGn-JR-2Qt" secondAttribute="bottom" constant="33" id="L2T-tg-HwA"/>
                             <constraint firstItem="kvq-KJ-I2b" firstAttribute="bottom" secondItem="pSl-S1-Nca" secondAttribute="bottom" id="Lik-aZ-tdY"/>
                             <constraint firstItem="pSl-S1-Nca" firstAttribute="leading" secondItem="kvq-KJ-I2b" secondAttribute="leading" id="NlS-Fr-VNU"/>
-                            <constraint firstItem="IGn-JR-2Qt" firstAttribute="centerX" secondItem="9PO-85-NZa" secondAttribute="centerX" constant="127.5" id="S0g-9o-32n"/>
                             <constraint firstItem="kvq-KJ-I2b" firstAttribute="trailing" secondItem="pSl-S1-Nca" secondAttribute="trailing" id="WTc-Oe-JVU"/>
                         </constraints>
                     </view>
@@ -472,7 +443,6 @@
                 <navigationController storyboardIdentifier="toHomeSegue" automaticallyAdjustsScrollViewInsets="NO" id="rL5-sf-Nsu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="z0t-Ty-IcB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
