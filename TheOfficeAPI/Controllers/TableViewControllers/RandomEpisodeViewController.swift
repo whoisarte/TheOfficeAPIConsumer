@@ -1,14 +1,6 @@
-//
-//  RandomEpisodeViewController.swift
-//  TheOfficeAPI
-//
-//  Created by Artemio on 21/09/21.
-//
-
 import UIKit
 
-class RandomEpisodeViewController: UIViewController {
-
+class RandomEpisodeViewController: UIViewController, ProtocolSetTypistFont{
     @IBOutlet weak var LBO_EpisodeTitle: UILabel!
     @IBOutlet weak var LBO_EpisodeDescription: UILabel!
     @IBOutlet weak var LBO_EpisodeAirDate: UILabel!
@@ -28,7 +20,14 @@ class RandomEpisodeViewController: UIViewController {
             self.LBO_EpisodeWriter.text = data.writer
             self.LBO_EpisodeDirector.text = data.director
          }
+        setTypistFont()
     }
     
-    
+    func setTypistFont() {
+        LBO_EpisodeTitle.font = UIFont(name:"Typist",size:20)
+        LBO_EpisodeDescription.font = UIFont(name:"Typist",size:15)
+        LBO_EpisodeAirDate.font = UIFont(name:"Typist",size:20)
+        LBO_EpisodeWriter.font = UIFont(name:"Typist",size:20)
+        LBO_EpisodeDirector.font = UIFont(name:"Typist",size:20)
+    }
 }

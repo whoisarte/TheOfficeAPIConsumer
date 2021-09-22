@@ -9,9 +9,7 @@ class RepositoryQuotes: ProtocolQuote  {
             do {
                 let datos: Quote = try JSONDecoder().decode(Quote.self, from: data)
                 let contenido: [DataClassQuote] = datos.data
-                for i in contenido {
-                    print("\n\(i.id) : \(i.content) : \(i.character.firstname) \(i.character.lastname)")
-                }
+                print(responseData.metrics!)
                 completion(contenido)
             } catch {
                 print("Error decoding data from quotes: \(error.localizedDescription)")
@@ -24,7 +22,7 @@ class RepositoryQuotes: ProtocolQuote  {
             do {
                 let datos: QuoteRandom = try JSONDecoder().decode(QuoteRandom.self, from: data)
                 let contenido: DataClassQuote = datos.data
-                print("\n\(contenido.id) : \(contenido.content) : \(contenido.character.firstname) \(contenido.character.lastname)")
+                print(responseData.metrics!)
                 completion(contenido)
             } catch {
                 print("Error decoding data from quote: \(error.localizedDescription)")
