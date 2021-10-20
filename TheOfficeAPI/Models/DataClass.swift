@@ -28,6 +28,7 @@ struct DataClassEpisode: Codable {
     }
 }
 
+// MARK: - DataClass
 struct DataClassEpisodeRandom: Codable {
     let id, title, dataDescription, writer: String
     let director, airDate: String

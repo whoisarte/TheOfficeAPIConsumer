@@ -2,7 +2,10 @@
 # platform :ios, '9.0'
 
 target 'TheOfficeAPI' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
+  # Pods for TheOfficeAPI
 pod 'Firebase/Analytics'
 
 pod 'Firebase/Auth'
@@ -11,7 +14,4 @@ pod 'Firebase/Firestore'
 #Adding Alamofire for API
 pod 'Alamofire', '~> 5.4'
 
-pod 'SwiftyJSON', '~> 4.0'
-
-#pod 'AlamofireObjectMapper', '~> 5.2'
 end
