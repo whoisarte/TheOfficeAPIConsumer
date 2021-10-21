@@ -1,7 +1,7 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController, ProtocolRoundComponents {
+class RegisterViewController: UIViewController, ProtocolRoundComponents, UITextFieldDelegate {
     
     //Atributos de la vista RegisterView
     @IBOutlet weak var TF_RegisterUsuario: UITextField!
@@ -11,6 +11,8 @@ class RegisterViewController: UIViewController, ProtocolRoundComponents {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office HH.RR"
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap) 
         roundComponents()
     }
     
@@ -38,6 +40,11 @@ class RegisterViewController: UIViewController, ProtocolRoundComponents {
         B_RegisterRegistrarse.layer.cornerRadius = 5; B_RegisterRegistrarse.clipsToBounds = true
         TF_RegisterUsuario.layer.cornerRadius = 10.0; TF_RegisterUsuario.clipsToBounds = true
         TF_RegisterContraseña.layer.cornerRadius = 10.0; TF_RegisterContraseña.clipsToBounds = true
+    }
+    
+    @objc func handleTap() {
+        TF_RegisterUsuario.resignFirstResponder()
+        TF_RegisterContraseña.resignFirstResponder()
     }
 
 }

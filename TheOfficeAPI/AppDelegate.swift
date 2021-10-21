@@ -10,7 +10,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //UITabBar.appearance().backgroundColor = UIColor(red: 0.75, green: 0.76, blue: 0.78, alpha: 1.00)
         //UITabBarItem.appearance().badgeColor = UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.00)
-        
         return true
         
     }

@@ -1,7 +1,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController, ProtocolRoundComponents {
+class LoginViewController: UIViewController, ProtocolRoundComponents, UITextFieldDelegate {
     
     //Atributos de la vista LoginView
     @IBOutlet weak var TF_LoginUsuario: UITextField!
@@ -15,9 +15,11 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "The Office Entrance"
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap) 
         roundComponents()
-        
     }
+    
     @IBAction func B_LoginEntrar_Click(_ sender: Any) {
         Auth.auth().signIn(withEmail: TF_LoginUsuario.text!, password: TF_LoginContraseña.text!) { user, error in
           if let error = error, user == nil {
@@ -49,4 +51,16 @@ class LoginViewController: UIViewController, ProtocolRoundComponents {
         TF_LoginUsuario.layer.cornerRadius = 10.0; TF_LoginUsuario.clipsToBounds = true
         TF_LoginContraseña.layer.cornerRadius = 10.0; TF_LoginContraseña.clipsToBounds = true
     }
+    
+    //Funciones para ocultar teclado al tocar en cualquier parte de la pantalla y en la tecla return del teclado
+    @objc func handleTap() {
+        TF_LoginUsuario.resignFirstResponder()
+        TF_LoginContraseña.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
 }

@@ -10,10 +10,6 @@ class RepositoryEpisodes: ProtocolEpisode  {
                 let contenido: [DataClassEpisode] = datos.data
                 //print(responseData.metrics!)
                 print("SENTENCIA ALL")
-                for c in contenido {
-                    print("Director -> \(c.director)")
-                    print("Escritor -> \(c.writer)")
-                }
                 completion(contenido)
             } catch {
                 print("Error decoding data from episodes: \(error.localizedDescription)")
